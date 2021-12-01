@@ -4,7 +4,7 @@ RUN mkdir -p /root/src/app/dotnet
 WORKDIR /root/src/app/dotnet
  
 COPY devops-net-core.csproj . 
-RUN dotnet restore ./devops-net-core.csproj 
+RUN dotnet restore ./dotnet-demo-app.csproj 
 
 COPY . .
 RUN dotnet publish -c release -o published 
