@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:3.1.415 as builder
 RUN mkdir -p /root/src/app/dotnet
 WORKDIR /root/src/app/dotnet
  
-COPY devops-net-core.csproj . 
+COPY dotnet-demo-app.csproj . 
 RUN dotnet restore ./dotnet-demo-app.csproj 
 
 COPY . .
